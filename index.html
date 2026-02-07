@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Folder - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Top Navigation Bar style from screenshot */
+        .finder-toolbar {
+            height: 52px;
+            background-color: #1e1e1e;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            border-bottom: 1px solid #2a2a2a;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav-arrows {
+            display: flex;
+            gap: 12px;
+            margin-right: 20px;
+        }
+
+        .nav-arrow {
+            color: #888;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .path-label {
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            color: #e0e0e0;
+        }
+
+        /* Folder Grid Container */
+        .folder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .folder-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .folder-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .folder-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 8px;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+        }
+
+        .folder-name {
+            font-size: 13px;
+            text-align: center;
+            color: #efefef;
+            line-height: 1.2;
+            word-break: break-word;
+            max-width: 110px;
+        }
+
+        /* macOS Blue Folder SVG simulation */
+        .mac-folder {
+            fill: #73c1f3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- macOS style toolbar from your screenshot -->
+    <div class="finder-toolbar">
+        <div class="nav-arrows">
+            <span class="nav-arrow">&lt;</span>
+            <span class="nav-arrow">&gt;</span>
+        </div>
+        <div class="path-label">MAINFOLDER&gt;</div>
+        <div class="ml-auto opacity-60">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4 4h4v4H4V4zm6 0h4v4h-4V4zm6 0h4v4h-4V4zM4 10h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4zM4 16h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4z"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Main Navigation Grid -->
+    <div class="folder-grid">
+        
+        <!-- Folder 1: AMAR SIR -->
+        <a href="AMAR SIR/amarsir.html" class="folder-item">
+            <div class="folder-icon">
+                <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                    <path class="mac-folder" d="M0 10C0 4.477 4.477 0 10 0h25c3 0 5 2 7 4l6 6h42c5.523 0 10 4.477 10 10v40c0 5.523-4.477 10-10 10H10C4.477 80 0 75.523 0 70V10z"/>
+                    <path fill="rgba(255,255,255,0.2)" d="M0 20h100v5H0z"/>
+                </svg>
+            </div>
+            <div class="folder-name">AMAR SIR</div>
+        </a>
+
+        <!-- Folder 2: Khatua SIR -->
+        <a href="Khatua SIR/khatuvasir.html" class="folder-item">
+            <div class="folder-icon">
+                <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                    <path class="mac-folder" d="M0 10C0 4.477 4.477 0 10 0h25c3 0 5 2 7 4l6 6h42c5.523 0 10 4.477 10 10v40c0 5.523-4.477 10-10 10H10C4.477 80 0 75.523 0 70V10z"/>
+                    <path fill="rgba(255,255,255,0.2)" d="M0 20h100v5H0z"/>
+                </svg>
+            </div>
+            <div class="folder-name">Khatua SIR</div>
+        </a>
+
+        <!-- Folder 3: Shaik Aleem SIR -->
+        <a href="Shaik Aleem SIR/Shaik AleemSir.html" class="folder-item">
+            <div class="folder-icon">
+                <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                    <path class="mac-folder" d="M0 10C0 4.477 4.477 0 10 0h25c3 0 5 2 7 4l6 6h42c5.523 0 10 4.477 10 10v40c0 5.523-4.477 10-10 10H10C4.477 80 0 75.523 0 70V10z"/>
+                    <path fill="rgba(255,255,255,0.2)" d="M0 20h100v5H0z"/>
+                </svg>
+            </div>
+            <div class="folder-name">Shaik Aleem SIR</div>
+        </a>
+
+        <!-- Folder 4: Nithin SIR -->
+        <a href="Nithin SIR/nithinfinal.html" class="folder-item">
+            <div class="folder-icon">
+                <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                    <path class="mac-folder" d="M0 10C0 4.477 4.477 0 10 0h25c3 0 5 2 7 4l6 6h42c5.523 0 10 4.477 10 10v40c0 5.523-4.477 10-10 10H10C4.477 80 0 75.523 0 70V10z"/>
+                    <path fill="rgba(255,255,255,0.2)" d="M0 20h100v5H0z"/>
+                </svg>
+            </div>
+            <div class="folder-name">Nithin SIR</div>
+        </a>
+
+        <!-- Folder 5: Arjunchaithanya SIR -->
+        <!-- Updated link: Fixed path and filename to match Screenshot 4.16.31 PM -->
+        <a href="Arjunchaithanya SIR/Arjunchaithanya SIR.html" class="folder-item">
+            <div class="folder-icon">
+                <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                    <path class="mac-folder" d="M0 10C0 4.477 4.477 0 10 0h25c3 0 5 2 7 4l6 6h42c5.523 0 10 4.477 10 10v40c0 5.523-4.477 10-10 10H10C4.477 80 0 75.523 0 70V10z"/>
+                    <path fill="rgba(255,255,255,0.2)" d="M0 20h100v5H0z"/>
+                </svg>
+            </div>
+            <div class="folder-name">Arjunchaithanya SIR</div>
+        </a>
+
+    </div>
+
+</body>
+</html>
